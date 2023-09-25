@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Untitled</title>
+</head>
+
+<body>
+    <p>Click the button to loop whilst i is less than 10,</p>
+    <button onclick="whileLoop()">Click me!</button>
+    <p id="While_Loop"></p>
+
+    <script>
+        function whileLoop() {
+            var outputtext = "";
+            var i = 0;
+            while (i<10) {
+                outputtext +="<br> The number is" + i;
+                i++;
+
+            }
+        }
+
+        chosenElement = document.getElementById("While_Loop");
+        chosenElement.innerHTML = outputtext;
+
+
+        
+    </script>
+</body>
+</html>
